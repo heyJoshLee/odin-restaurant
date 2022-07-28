@@ -1,0 +1,76 @@
+:root {
+    --basic-element-padding: 20px;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+#content {
+    display: grid;
+    justify-items: stretch;
+    text-align: center;
+}
+
+#header {
+    columns: 1 / 1;
+    padding: var(--basic-element-padding);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#header img {
+    width: 50px;
+}
+
+#logo-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+}
+
+#header ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 10px;
+    justify-self: end;
+}
+
+
+.recipe img {
+    width: 200px;
+    height: 200px;
+}
+
+#hero {
+    width: 100%;
+    height: 250px;
+    background-image: url('../src/images/placeholder.svg');
+    text-align: center;
+    display: grid;
+    align-items: center;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: 1fr;
+}
+
+#hero h1 {
+    
+}
+
+#recipes-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 200px);
+    column-gap: 30px;
+    justify-content:center;
+    padding-bottom: 20px;
+}
